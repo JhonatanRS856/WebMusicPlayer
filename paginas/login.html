@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <i class="fa-solid fa-music" style="color:  rgb(218, 164, 114);"></i>
+            <h1>Inicia sesión en MusicPlayer</h1>
+        </header>
+        <div class="botones">
+            <button class="btn"><img src="../imagenes/google.png" alt=""></i>
+                <p>Continuar con Google</p>
+            </button>
+            <button class="btn"><i class="fa-brands fa-facebook" style="color: rgb(70, 116, 154);"></i>
+                <p>Continuar con Facebook</p>
+            </button>
+            <button class="btn"><i class="fa-brands fa-apple" style="font-size: 20px;"></i>
+                <p>Continuar con Apple</p>
+            </button>
+            <button class="btn">
+                <p>Continuar con número de teléfono</p>
+            </button>
+        </div>
+        <hr>
+        <div class="form">
+            <form id="myForm">
+                <h3>Correo eletrónico o nombre de usuario</h3>
+                <div class="input-field">
+                    <input type="text" class="otl-f" id="input1" placeholder="Correo eletrónico o nombre de usuario">
+                </div>
+                <div id="warningMessage1" class="hidden warning">
+                    <p><i class="fa-solid fa-circle-exclamation"></i> Este Campo es obligatorio</p>
+                </div>
+                <h3>Contraseña</h3>
+                <div class="input-field">
+                    <input type="password" class="otl-f" id="input2" placeholder="Contraseña">
+                    <i class="fa-solid fa-eye-slash" style="color: rgb(198, 198, 198);"></i>
+                </div>
+                <div id="warningMessage2" class="hidden warning">
+                    <p><i class="fa-solid fa-circle-exclamation"></i> Este Campo es obligatorio</p>
+                </div>
+                <div class="toggle-btn">
+                    <div class="toggle" onclick="this.classList.toggle('clicked')"></div>
+                    <label>Recuérdeme</label>
+                </div>
+                <div class="ctn-btn">
+                    <button type="submit" class="btn-s">Iniciar sesión</button>
+                </div>
+            </form>
+        </div>
+        <div class="recuperacion">
+            <a href="#">¿Se te ha olvidado la contraseña?</a>
+            <div class="suscribir">
+                <p>¿No tienes cuenta?</p>
+                <a href="#">Suscríbete a MusicPlayer</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="text">
+            <p>Este sitio está protegido por reCAPTCHA. Se aplican los <a href="#">Términos del servicio</a> y la <a
+                    href="#">Política de Privacidad</a> de Google.
+            </p>
+        </div>
+    </footer>
+    <script src="../java/script.js"></script>
+</body>
+
+</html>
